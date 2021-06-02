@@ -1,7 +1,7 @@
 # code-401-reading-notes
 
 
-![software devloper](https://res.cloudinary.com/practicaldev/image/fetch/s--xG1gcsyJ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/h68x0up43hmknl5tjcww.jpg)
+![software devloper](https://exaud.com/wp-content/uploads/2020/09/software-skills.png)
 
 ## [code 101 & 102 reading notes](https://aymannaif.github.io/reading-notes/)
 ## [code 201 reading notes](https://aymannaif.github.io/code-201-reading-notes/)
