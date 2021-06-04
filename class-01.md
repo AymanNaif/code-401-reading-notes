@@ -25,3 +25,6 @@ Big O notation is used in Computer Science to describe the performance or comple
 ###### - O(N2) : represents an algorithm whose performance is directly proportional to the square of the size of the input data set. This is common with algorithms that involve nested iterations over the data set. Deeper nested iterations will result in O(N3), O(N4) etc.
 ###### - O(2N) : denotes an algorithm whose growth doubles with each additon to the input data set. The growth curve of an O(2N) function is exponential - starting off very shallow, then rising meteorically
 ###### - O(log N) : The iterative halving of data sets produces a growth curve that peaks at the beginning and slowly flattens out as the size of the data sets increase
+
+
+### [HOME PAGE](https://aymannaif.github.io/code-401-reading-notes/)
