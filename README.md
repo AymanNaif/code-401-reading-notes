@@ -11,8 +11,8 @@
 
 the section | subject
 ------------ | -------------
-section one | [Pain vs. Suffering + Big O Notation](https://aymannaif.github.io/code-401-reading-notes/class-01)
-section two | 
+section one | [Pain vs. Suffering + Big O Notation](https://aymannaif.github.io/reading-notes/class-01)
+section two | [Testing and Modules](https://aymannaif.github.io/reading-notes/class-02)
 section three | 
 Section Four | 
 Section Five | 
