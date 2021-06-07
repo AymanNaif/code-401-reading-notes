@@ -13,7 +13,7 @@ the section | subject
 ------------ | -------------
 section one | [Pain vs. Suffering + Big O Notation](https://aymannaif.github.io/reading-notes/class-01)
 section two | [Testing and Modules](https://aymannaif.github.io/reading-notes/class-02)
-section three | 
+section three | [FileIO & Exceptions](https://aymannaif.github.io/reading-notes/class-03)
 Section Four | 
 Section Five | 
 Section six  | 
