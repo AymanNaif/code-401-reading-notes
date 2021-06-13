@@ -16,8 +16,8 @@ section two | [Testing and Modules](https://aymannaif.github.io/reading-notes/cl
 section three | [FileIO & Exceptions](https://aymannaif.github.io/reading-notes/class-03)
 Section Four |  [Topic](https://aymannaif.github.io/reading-notes/class-04)
 Section Five | [Linked ](https://aymannaif.github.io/reading-notes/class-05)
-Section six  | [Game of Greed 1](https://aymannaif.github.io/reading-notes/class-06)
-Section seven  | 
+Section six  | [Random Module](https://aymannaif.github.io/reading-notes/class-06)
+Section seven  | [Python Scope](https://aymannaif.github.io/reading-notes/class-07)
 Section nine |
 Section ten | 
 Section eleven | 
