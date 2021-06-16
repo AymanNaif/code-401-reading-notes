@@ -20,4 +20,4 @@ Section six  | [Random Module](https://aymannaif.github.io/reading-notes/class-0
 Section seven  | [Python Scope](https://aymannaif.github.io/reading-notes/class-07)
 Section eight | [List Comprehensions in Python](https://aymannaif.github.io/reading-notes/class-08)
 Section nine |  [Dunder Methods & Statistics - Probability](https://aymannaif.github.io/reading-notes/class-09)
-Section ten | 
+Section ten | [Stacks and Queues](https://aymannaif.github.io/reading-notes/class-10)
