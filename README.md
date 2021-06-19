@@ -21,3 +21,5 @@ Section seven  | [Python Scope](https://aymannaif.github.io/reading-notes/class-
 Section eight | [List Comprehensions in Python](https://aymannaif.github.io/reading-notes/class-08)
 Section nine |  [Dunder Methods & Statistics - Probability](https://aymannaif.github.io/reading-notes/class-09)
 Section ten | [Stacks and Queues](https://aymannaif.github.io/reading-notes/class-10)
+Section eleven | [Data Analysis](https://aymannaif.github.io/reading-notes/class-11)
+Section twelve |
