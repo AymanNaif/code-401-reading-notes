@@ -23,3 +23,4 @@ Section nine |  [Dunder Methods & Statistics - Probability](https://aymannaif.gi
 Section ten | [Stacks and Queues](https://aymannaif.github.io/reading-notes/class-10)
 Section eleven | [Data Analysis](https://aymannaif.github.io/reading-notes/class-11)
 Section twelve | [Pandas](https://aymannaif.github.io/reading-notes/class-12)
+Section thirteen | [Linear Regression](https://aymannaif.github.io/reading-notes/class-13)
