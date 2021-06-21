@@ -1,4 +1,4 @@
-# Read:13 Summary
+# Linear Regression
 ## How to run Linear regression in Python
 * `Linear regression` : is one of the fundamental statistical and machine learning techniques. Whether you want to do statistics, machine learning, or scientific computing,
 there are good chances that you’ll need it. It’s advisable to learn it first and then proceed towards more complex methods.
