@@ -24,3 +24,4 @@ Section ten | [Stacks and Queues](https://aymannaif.github.io/reading-notes/clas
 Section eleven | [Data Analysis](https://aymannaif.github.io/reading-notes/class-11)
 Section twelve | [Pandas](https://aymannaif.github.io/reading-notes/class-12)
 Section thirteen | [Linear Regression](https://aymannaif.github.io/reading-notes/class-13)
+Section fourteen | [Matplotlib Tutorial](https://aymannaif.github.io/reading-notes/class-14)
