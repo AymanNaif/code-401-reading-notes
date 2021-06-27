@@ -27,3 +27,4 @@ Section thirteen | [Linear Regression](https://aymannaif.github.io/reading-notes
 Section fourteen | [Data Visualization](https://aymannaif.github.io/reading-notes/class-14)
 Section fifteen | [Tree](https://aymannaif.github.io/reading-notes/class-15)
 Section sixteen | [Data Science Primer](https://aymannaif.github.io/reading-notes/class-16)
+Section seventeen | [Web Scraping](https://aymannaif.github.io/reading-notes/class-17)
