@@ -28,3 +28,4 @@ Section fourteen | [Data Visualization](https://aymannaif.github.io/reading-note
 Section fifteen | [Tree](https://aymannaif.github.io/reading-notes/class-15)
 Section sixteen | [Data Science Primer](https://aymannaif.github.io/reading-notes/class-16)
 Section seventeen | [Web Scraping](https://aymannaif.github.io/reading-notes/class-17)
+Section eightteen | [Cryptography](https://aymannaif.github.io/reading-notes/class-18)
