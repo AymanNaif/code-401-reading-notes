@@ -30,3 +30,4 @@ Section sixteen | [Data Science Primer](https://aymannaif.github.io/reading-note
 Section seventeen | [Web Scraping](https://aymannaif.github.io/reading-notes/class-17)
 Section eightteen | [Cryptography](https://aymannaif.github.io/reading-notes/class-18)
 Section nineteen | [Automation](https://aymannaif.github.io/reading-notes/class-19)
+Section twenty | [Django](https://aymannaif.github.io/reading-notes/class-20)
