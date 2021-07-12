@@ -32,3 +32,4 @@ Section eightteen | [Cryptography](https://aymannaif.github.io/reading-notes/cla
 Section nineteen | [Automation](https://aymannaif.github.io/reading-notes/class-19)
 Section twenty | [Django](https://aymannaif.github.io/reading-notes/class-20)
 Section twenty one | [Django Models](https://aymannaif.github.io/reading-notes/class-21)
+Section twenty two | [Django Forms](https://aymannaif.github.io/reading-notes/class-22)
