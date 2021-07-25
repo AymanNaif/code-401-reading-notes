@@ -35,3 +35,4 @@ Section twenty one | [Django Models](https://aymannaif.github.io/reading-notes/c
 Section twenty two | [Django Forms](https://aymannaif.github.io/reading-notes/class-22)
 Section twenty three | [Django Custom User Model](https://aymannaif.github.io/reading-notes/class-23)
 Section twenty four | [Hash Tables](https://aymannaif.github.io/reading-notes/class-24)
+Section twenty four | [Docker](https://aymannaif.github.io/reading-notes/class-25)
