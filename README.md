@@ -37,3 +37,4 @@ Section twenty three | [Django Custom User Model](https://aymannaif.github.io/re
 Section twenty four | [Hash Tables](https://aymannaif.github.io/reading-notes/class-24)
 Section twenty five | [Docker](https://aymannaif.github.io/reading-notes/class-25)
 Section twenty six | [Permissions & Postgresql](https://aymannaif.github.io/reading-notes/class-26)
+Section twenty seven | [Authentication & Production Server](https://aymannaif.github.io/reading-notes/class-27)
