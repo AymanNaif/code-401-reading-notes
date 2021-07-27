@@ -38,3 +38,4 @@ Section twenty four | [Hash Tables](https://aymannaif.github.io/reading-notes/cl
 Section twenty five | [Docker](https://aymannaif.github.io/reading-notes/class-25)
 Section twenty six | [Permissions & Postgresql](https://aymannaif.github.io/reading-notes/class-26)
 Section twenty seven | [Authentication & Production Server](https://aymannaif.github.io/reading-notes/class-27)
+Section twenty eight | [API Deployment](https://aymannaif.github.io/reading-notes/class-28)
