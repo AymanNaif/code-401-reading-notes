@@ -39,3 +39,4 @@ Section twenty five | [Docker](https://aymannaif.github.io/reading-notes/class-2
 Section twenty six | [Permissions & Postgresql](https://aymannaif.github.io/reading-notes/class-26)
 Section twenty seven | [Authentication & Production Server](https://aymannaif.github.io/reading-notes/class-27)
 Section twenty eight | [API Deployment](https://aymannaif.github.io/reading-notes/class-28)
+Section twenty nine | [Graphs](https://aymannaif.github.io/reading-notes/class-29)
