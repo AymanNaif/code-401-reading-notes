@@ -41,3 +41,4 @@ Section twenty seven | [Authentication & Production Server](https://aymannaif.gi
 Section twenty eight | [API Deployment](https://aymannaif.github.io/reading-notes/class-28)
 Section twenty nine | [Graphs](https://aymannaif.github.io/reading-notes/class-29)
 Section thirty | [DSA Review](https://aymannaif.github.io/reading-notes/class-30)
+Section thirty one | [React 1](https://aymannaif.github.io/reading-notes/class-31)
