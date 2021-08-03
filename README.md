@@ -43,3 +43,4 @@ Section twenty nine | [Graphs](https://aymannaif.github.io/reading-notes/class-2
 Section thirty | [DSA Review](https://aymannaif.github.io/reading-notes/class-30)
 Section thirty one | [React 1](https://aymannaif.github.io/reading-notes/class-31)
 Section thirty two | [React 2](https://aymannaif.github.io/reading-notes/class-32)
+Section thirty two | [React 3](https://aymannaif.github.io/reading-notes/class-33)
