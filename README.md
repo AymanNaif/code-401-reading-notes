@@ -47,3 +47,4 @@ Section thirty three | [React 3](https://aymannaif.github.io/reading-notes/class
 Section thirty four | [Next.js - Dynamic Routes & Deployment](https://aymannaif.github.io/reading-notes/class-34)
 Section thirty five | [Pythonisms](https://aymannaif.github.io/reading-notes/class-35)
 Section thirty six | [Ethics in Tech](https://aymannaif.github.io/reading-notes/class-36)
+Section thirty seven | [React JS](https://aymannaif.github.io/reading-notes/ReactJS)
