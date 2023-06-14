@@ -49,7 +49,10 @@ Hooks:
 	-  useMemo 
 		is a hook such as  useCallback but it’s store data instead of a function (array, objects ..etc) it’s  	
  		usually used for save a memory intensive to recalculate data ex: useMemo(()=>, [dependancies])
-
+Custom Hooks:
+	it’s a function that use a stateful for manage a state , it’s start with ‘use’ word ex: useHttp()
+	usually we create it for write the common state logic 
+	
 Redux:
 	to use Redux you need to make a communication between (store and reducer) then subscribe the store 	to a subscriber function
 	1- create a reducer function ex: counterReducer = (state , action) =>{}; 
@@ -102,10 +105,53 @@ Redux toolkit:
 		{reducer: counter: counterSlice.reducer, auth: authSlice.reducer}
 
 
+React Routing:
+	to start routing inside your application, 
+	1- you need to install a new package which call ‘read-router-dom’
+	2- then inside your App.js import {createBrowserRouter, RouterProvider }
+	3- then create the router by using createBrowserRouter —> 
+		const router = createBrowserRouter ({path: ‘/’, element: <HomePage / >})
+		HomePage: is a component created inside pages folder to render it pn specific path
+	4- return RouterProvider with router prop (inside function App) —> <RouterProvider router ={router}/>
+= alternative way to create router:
+	1- import {createBrowserRouter, createRouteFromElements, Route} from ‘read-router-dom’
+	2- const routerDefinations =  createRouteFromElements(
+								<Route>
+									<Route path: ‘/’ element: {<HomePage / >}/>
+								</Route>
+							   )
+	3- const router = createBrowserRouter(routerDefinations)
+	
+	** you can use {Link}  from ‘read-router-dom’ instead of <a></a> to prevent send request and navigate 	
+	between pages <Link to=‘/path’ >Page Name<Link/>
+	** it’s better to use NavLink than Link for navigation, because it provide you with more flexibility
+	by specific the Active page for example —> 
+		<NavLink to=‘/path’ className= {(isActive)=> isActive && classes.active}>Page Name<NavLink/>
+	** to navigate programmatically import {useNavigate}  from ‘read-router-dom’ then use it .
+	App Layout 
+	to create a layout follow below: 
+		1- create	 your Layout component inside pages folder
+		2- inside the router you can use children prop to wrap the pages with the layout
+		  ex: const router = createBrowserRouter (
+							{path: ‘/’, 
+							element: <RootLayout / >
+							children: [{path: ‘/’,  element: <HomePage / >}
+									 {path: ‘/’products,  element: <ProductsPage / >}
+									]
+							}
+						  )
+		3- inside the Layout page you need to mark up where the children should render
+		    you do it with {Outlet}from from ‘read-router-dom’ then use it
+Dynamic Route
+  You will use params inside your path then useParams inside your component to get the value
+   1-inside the router —> {path: /hello/:id }
+   2- inside the component import {useParams}from from ‘read-router-dom’ 
+   3- const params = useParams(); then you will have access to the param ex: params.id
 
 
 
- 
+
+
 
 Concepts and Terms:	
 - Two-way binding
