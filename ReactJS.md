@@ -49,61 +49,61 @@
 
 - `useReducer()`:
  The `useReducer` hook in React is used to manage more complex state that depends on multiple actions or requires more advanced state management logic. It is a higher-order function that takes in a reducer function and an initial state.
+ The reducer function is a callback function that accepts the current state and an action as parameters, and returns a new state based on the action. It follows the `(state, action) => newState` pattern. This function determines how the state should be updated based on the specific action being dispatched.
 
-The reducer function is a callback function that accepts the current state and an action as parameters, and returns a new state based on the action. It follows the `(state, action) => newState` pattern. This function determines how the state should be updated based on the specific action being dispatched.
+ By using `useReducer`, you can handle state updates in a more structured and predictable way, especially when the state transitions involve multiple actions or have complex data dependencies.
 
-By using `useReducer`, you can handle state updates in a more structured and predictable way, especially when the state transitions involve multiple actions or have complex data dependencies.
+ It's important to note that `useReducer` is often used in conjunction with the `dispatch` function to dispatch actions to the reducer, which triggers the state updates. The `dispatch` function can be passed down to child components, allowing them to trigger state changes as well.
 
-It's important to note that `useReducer` is often used in conjunction with the `dispatch` function to dispatch actions to the reducer, which triggers the state updates. The `dispatch` function can be passed down to child components, allowing them to trigger state changes as well.
+ Overall, `useReducer` provides a more structured and scalable approach to state management, particularly when dealing with complex state transitions or multiple actions.
+ example:
 
-Overall, `useReducer` provides a more structured and scalable approach to state management, particularly when dealing with complex state transitions or multiple actions.
-example:
+ ```javascript
+ import React, { useReducer } from 'react';
 
-```javascript
-import React, { useReducer } from 'react';
-
-// Reducer function
-const reducer = (state, action) => {
+ // Reducer function
+ const reducer = (state, action) => {
   switch (action.type) {
-    case 'INCREMENT':
-      return { count: state.count + 1 };
-    case 'DECREMENT':
-      return { count: state.count - 1 };
-    case 'RESET':
-      return { count: 0 };
-    default:
-      return state;
+   case 'INCREMENT':
+    return { count: state.count + 1 };
+   case 'DECREMENT':
+    return { count: state.count - 1 };
+   case 'RESET':
+    return { count: 0 };
+   default:
+    return state;
   }
-};
+ };
 
-const Counter = () => {
+ const Counter = () => {
   // Initialize state using useReducer
   const [state, dispatch] = useReducer(reducer, { count: 0 });
 
   const increment = () => {
-    dispatch({ type: 'INCREMENT' });
+   dispatch({ type: 'INCREMENT' });
   };
 
   const decrement = () => {
-    dispatch({ type: 'DECREMENT' });
+   dispatch({ type: 'DECREMENT' });
   };
 
   const reset = () => {
-    dispatch({ type: 'RESET' });
+   dispatch({ type: 'RESET' });
   };
 
   return (
-    <div>
-      <p>Count: {state.count}</p>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
-      <button onClick={reset}>Reset</button>
-    </div>
+   <div>
+    <p>Count: {state.count}</p>
+    <button onClick={increment}>Increment</button>
+    <button onClick={decrement}>Decrement</button>
+    <button onClick={reset}>Reset</button>
+   </div>
   );
-};
+ };
 
-export default Counter;
-```
+ export default Counter;
+
+ ```
 
 - `useContext()`:
   - Context provides a way to share data between components without explicitly passing it through
@@ -128,6 +128,7 @@ export default Counter;
    ```
 
   5. use the value of it :D
+
 - `React.memo(component)`:
   - is a higher-order component (HOC) used to memoize the rendering of a functional component.
   - it is typically used to optimize the rendering performance of a functional component by preventing unnecessary re-renders.
