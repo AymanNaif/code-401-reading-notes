@@ -39,72 +39,23 @@
 
   ```javascript
   useEffect(() => {
-   // Side effect code here
+   //Side effect code here
    
    return () => {
-    // Cleanup code here
+    //Cleanup code here
    };
   }, [dependencies]);
   ```
 
 - `useReducer()`:
- The `useReducer` hook in React is used to manage more complex state that depends on multiple actions or requires more advanced state management logic. It is a higher-order function that takes in a reducer function and an initial state.
- The reducer function is a callback function that accepts the current state and an action as parameters, and returns a new state based on the action. It follows the `(state, action) => newState` pattern. This function determines how the state should be updated based on the specific action being dispatched.
-
- By using `useReducer`, you can handle state updates in a more structured and predictable way, especially when the state transitions involve multiple actions or have complex data dependencies.
-
- It's important to note that `useReducer` is often used in conjunction with the `dispatch` function to dispatch actions to the reducer, which triggers the state updates. The `dispatch` function can be passed down to child components, allowing them to trigger state changes as well.
-
- Overall, `useReducer` provides a more structured and scalable approach to state management, particularly when dealing with complex state transitions or multiple actions.
- example:
-
- ```javascript
- import React, { useReducer } from 'react';
-
- // Reducer function
- const reducer = (state, action) => {
-  switch (action.type) {
-   case 'INCREMENT':
-    return { count: state.count + 1 };
-   case 'DECREMENT':
-    return { count: state.count - 1 };
-   case 'RESET':
-    return { count: 0 };
-   default:
-    return state;
-  }
- };
-
- const Counter = () => {
-  // Initialize state using useReducer
-  const [state, dispatch] = useReducer(reducer, { count: 0 });
-
-  const increment = () => {
-   dispatch({ type: 'INCREMENT' });
-  };
-
-  const decrement = () => {
-   dispatch({ type: 'DECREMENT' });
-  };
-
-  const reset = () => {
-   dispatch({ type: 'RESET' });
-  };
-
-  return (
-   <div>
-    <p>Count: {state.count}</p>
-    <button onClick={increment}>Increment</button>
-    <button onClick={decrement}>Decrement</button>
-    <button onClick={reset}>Reset</button>
-   </div>
-  );
- };
-
- export default Counter;
-
- ```
-
+  - The useReducer hook is another built-in hook provided by React. It is used for managing complex state  logic in functional components. While the useState hook is suitable for managing simple state,
+ the useReducer hook provides a more powerful alternative when you need to handle state transitions  that involve multiple actions and complex state updates.
+ The useReducer hook follows the concept of a reducer function, which is a pure function that takes the  current state and an action as arguments, and returns the new state based on the action. The reducer  function specifies how state transitions should happen in response to different actions.
+ The useReducer hook is another built-in hook provided by React. It is used for managing complex state  logic in functional components. While the useState hook is suitable for managing simple state,
+ the useReducer hook provides a more powerful alternative when you need to handle state transitions
+ that involve multiple actions and complex state updates.
+ The useReducer hook follows the concept of a reducer function, which is a pure function that takes the  current state and an action as arguments, and returns the new state based on the action. The reducer  function specifies how state transitions should happen in response to different actions. For ex check
+ chatGPT
 - `useContext()`:
   - Context provides a way to share data between components without explicitly passing it through
   every level of the component tree. It is useful when you have data that needs to be accessed by
@@ -128,7 +79,6 @@
    ```
 
   5. use the value of it :D
-
 - `React.memo(component)`:
   - is a higher-order component (HOC) used to memoize the rendering of a functional component.
   - it is typically used to optimize the rendering performance of a functional component by preventing unnecessary re-renders.
@@ -138,25 +88,25 @@
 - `useCallback()`:
   - hook is used to store a function across component execution (save a function) to prevent
   re-creation on every component re-render — so one function is create and store on a memory
-  it take a dependancies such as useEffect and re-create it when dependancies is changed
+  it take a dependencies such as useEffect and re-create it when dependencies is changed
     - Example:
 
   ```javascript
-  useCallback(()=>, [dependancies])
+  useCallback(()=>, [dependencies])
   ```
 
 - `useMemo()`:
-  - is a hook such as  useCallback but it’s store data instead of a function (array, objects ..etc)
-  - it’s  usually used for save a memory intensive to recalculate data
+  - is a hook such as  useCallback but it's store data instead of a function (array, objects ..etc)
+  - it's  usually used for save a memory intensive to recalculate data
     - Example:
 
   ```javascript
-  useMemo(()=>, [dependancies])
+  useMemo(()=>, [dependencies])
   ```
 
 ## Custom Hooks
 
-- it’s a function that use a stateful for manage a state , it’s start with ‘use’ word ex: useHttp() usually we create it for write the common state logic
+- it's a function that use a stateful for manage a state , it's start with 'use' word ex: useHttp() usually we create it for write the common state logic
 
 ## Redux
 
@@ -182,7 +132,7 @@
 
   3. import a provider from “react-redux” in a top level of the application then wrap it with it (index.js)and pass the store into store prop —> ex: `root.render(<Provider store = {store} ><App /></Provider>);`
   4. when you need to use the values inside a component you have to use useSelector hooks provide by “react-redux” then call the value you need ex: `const counter = useSelector(state => state.counter );`
-  5. when you need to dispatch —> `import useDispatch() from 'react-redux'` then assign it to a var and use it ex: `const dispatch = useDispatch(); .. then to dispatch —>dispatch({type: 'decrement’,})` note that you can pass a payload to the action ex: dispatch({type: 'decrement', amount:5 })
+  5. when you need to dispatch —> `import useDispatch() from 'react-redux'` then assign it to a var and use it ex: `const dispatch = useDispatch(); .. then to dispatch —>dispatch({type: 'decrement',})` note that you can pass a payload to the action ex: dispatch({type: 'decrement', amount:5 })
 
 ## Redux Toolkit
 
@@ -219,7 +169,7 @@
  4. then you export the store and use it inside the provider
 
  5. and export the actions to import it inside the component and dispatch them there ex: `export const counterActions = counterSlice.actions`
-  */ inside the component file will be :: /*
+  */inside the component file will be :: /*
 
    ```javascript
   import { useSelector, useDispatch } from 'react-redux';
@@ -231,36 +181,97 @@
 - if you dealing with multiple slices then your configureStore will be like:
   `{reducer: counter: counterSlice.reducer, auth: authSlice.reducer}`
 
+### Action Creator
+
+  it's a function that returns another function for dispatch actions, and it use to handle side effects or async functions
+ so you can't put those inside the reducer
+
+- example:
+
+  ```javascript
+  export const sendCartData = (cart) => {
+  return async (dispatch) => {
+  dispatch(
+   uiActions.showNotification({
+   status: 'pending',
+   title: 'Sending...',
+   message: 'Sending cart data!',
+   })
+  );
+
+  const sendRequest = async () => {
+   const response = await fetch(
+   'https://react-http-6b4a6.firebaseio.com/cart.json',
+   {
+    method: 'PUT',
+    body: JSON.stringify({
+    items: cart.items,
+    totalQuantity: cart.totalQuantity,
+    }),
+   }
+   );
+
+   if (!response.ok) {
+   throw new Error('Sending cart data failed.');
+   }
+  };
+
+  try {
+   await sendRequest();
+
+   dispatch(
+   uiActions.showNotification({
+    status: 'success',
+    title: 'Success!',
+    message: 'Sent cart data successfully!',
+   })
+   );
+  } catch (error) {
+   dispatch(
+   uiActions.showNotification({
+    status: 'error',
+    title: 'Error!',
+    message: 'Sending cart data failed!',
+   })
+   );
+  }
+  };
+
+ };
+
+  ```
+
+	- to organize the code you can put this code in a separate file out side the slice file
 ## React Routing
 
 - to start routing inside your application,
 
- 1. you need to install a new package which call `‘read-router-dom’`
+ 1. you need to install a new package which call `'read-router-dom'`
  2. then inside your App.js `import {createBrowserRouter, RouterProvider }`
  3. then create the router by using createBrowserRouter —>
-  `const router = createBrowserRouter ({path: ‘/’, element: <HomePage / >})`
+  `const router = createBrowserRouter ({path: '/', element: <HomePage />})`
   HomePage: is a component created inside pages folder to render it pn specific path
  4. return RouterProvider with router prop (inside function App) —> `<RouterProvider router ={router}/>`
 
 - alternative way to create router:
 
- 1. import {createBrowserRouter, createRouteFromElements, Route} from ‘read-router-dom’
+ 1. import {createBrowserRouter, createRouteFromElements, Route} from 'read-router-dom'
  2.
 
   ```javascript
-   const routerDefinations =  createRouteFromElements(
+   const routerDefinitions =  createRouteFromElements(
          <Route>
-          <Route path: ‘/’ element: {<HomePage / >}/>
+          <Route path= '/' element= {<HomePage />}/>
          </Route>
          )
   ```
 
- 3. `const router = createBrowserRouter(routerDefinations)`
+ 3. `const router = createBrowserRouter(routerDefinitions)`
 
-- note: you can use {Link}  from ‘read-router-dom’ instead of <a></a> to prevent send request and navigate between pages `<Link to=‘/path’ >Page Name<Link/>`
-- t’s better to use `NavLink` than Link for navigation, because it provide you with more flexibility
- by specific the Active page for example —> `<NavLink to=‘/path’ className= {(isActive)=> isActive && classes.active}>Page Name<NavLink/>`
-- to navigate programmatically `import {useNavigate}  from ‘read-router-dom’`then use it .
+- note: you can use {Link}  from 'read-router-dom' instead of <a></a> to prevent send request and navigate between pages `<Link to='/path' >Page Name<Link/>`
+- t's better to use `NavLink` than Link for navigation, because it provide you with more flexibility
+ by specific the Active page for example —> `<NavLink to='/path' className= {(isActive)=> isActive && classes.active}>Page Name<NavLink/>`
+- to navigate programmatically `import {useNavigate}  from 'read-router-dom'`then use it .
 
 ### App Layout
 
@@ -271,23 +282,23 @@
 
   ```javascript
    const router = createBrowserRouter (
-       {path: ‘/’, 
-       element: <RootLayout / >
-       children: [{path: ‘/’,  element: <HomePage / >}
-         {path: ‘/’products,  element: <ProductsPage / >}
+       {path: '/', 
+       element: <RootLayout />
+       children: [{path: '/',  element: <HomePage />}
+         {path: '/'products,  element: <ProductsPage />}
          ]
        }
        )
   ```
 
- 3. inside the Layout page you need to mark up where the children should render you do it with `{Outlet}from from ‘read-router-dom’` then use it
+ 3. inside the Layout page you need to mark up where the children should render you do it with `{Outlet}from from 'read-router-dom'` then use it
 
 ### Dynamic Route
 
 - You will use params inside your path then useParams inside your component to get the value
 
  1. inside the router —> `{path: /hello/:id }`
- 2. inside the component `import {useParams}from from ‘read-router-dom’`
+ 2. inside the component `import {useParams}from from 'read-router-dom'`
  3. const params = `useParams();` then you will have access to the param ex: `params.id`
 
 ## Concepts and Terms
